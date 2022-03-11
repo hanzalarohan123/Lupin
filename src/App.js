@@ -7,10 +7,13 @@ function App() {
     <div className="App">
       
         
-       <Greet /> 
-       <Welcome />      
-      
-      
+       
+       <Greet name="sss" age='12'><p>child prop 1</p> </Greet>
+       <Greet name="sss" age='13'><button>cick me</button></Greet>
+       <Greet name="sss" age='14'><p>child prop 3</p></Greet>
+       <Welcome name="sss" age='12'/> 
+       <Welcome name="sss" age='13'/> 
+       <Welcome name="sss" age='14'/>
     </div>
     
   );

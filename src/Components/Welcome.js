@@ -4,7 +4,8 @@ class Welcome extends Component
 {
     render()
     {
-      return <h1>Hello babies from class Component</h1>    
-    }
+      return <h1>Name is {this.props.name} and age is {this.props.age}</h1>
+
+    }  
 }
 export default Welcome
