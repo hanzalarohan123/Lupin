@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 
 export class ClickClass extends Component {
-  render() {
-    function clickClassFunction()
+    clickClassFunction()
     {
         console.log("clicked from class compoent")
     }
+  render() {
+    
     return (
-      <div><button onClick={clickClassFunction}>Class button</button></div>
+      <div><button onClick={this.clickClassFunction}>Class button</button></div>
     )
   }
 }

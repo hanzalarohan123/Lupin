@@ -6,6 +6,7 @@ import IncludinState from './Components/IncludinState';
 import CounterUsingUseState from './Components/CounterUsingUseState';
 import FunctionCick from './Components/FunctionCick';
 import ClickClass from './Components/ClickClass';
+import BindClick from './Components/BindClick';
 function App() {
   return (
     <div className="App">
@@ -20,9 +21,11 @@ function App() {
       
       //destructuring 
       <Welcome name="sss" age='12' /> 
-       <Greet name="sss" age='1'></Greet>*/}
+       <Greet name="sss" age='1'></Greet>
 <FunctionCick  />
-<ClickClass/>
+  <ClickClass/>*/ }
+      <BindClick />
+
 
     </div>
 
