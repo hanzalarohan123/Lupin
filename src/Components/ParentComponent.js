@@ -10,9 +10,9 @@ import ChildComponent from './ChildComponent'
        }
        this.greetComponent=this.greetComponent.bind(this)
      }
-     greetComponent(props)
+     greetComponent(childName)
      {
-         alert(`Helllo${this.state.statement}`)
+         alert(`Helllo${this.state.statement} as ${childName} `)
      }
   render() {
     return(  <ChildComponent greetComponent1={this.greetComponent}/>
