@@ -8,11 +8,14 @@ import FunctionCick from "./Components/FunctionCick";
 import ClickClass from "./Components/ClickClass";
 import BindClick from "./Components/BindClick";
 import ParentComponent from "./Components/ParentComponent";
+import IfnElse from "./Components/IfnElse";
 function App() {
   return (
     <div className="App">
+     <IfnElse/>
+      {/*
       <ParentComponent/>
-      {/* <CounterUsingUseState/> 
+       <CounterUsingUseState/> 
      <Greet name="sss" age='12'><p>child prop 1</p> </Greet>
        <Greet name="sss" age='13'><button>cick me</button></Greet>
        <Greet name="sss" age='14'><p>child prop 3</p></Greet>
