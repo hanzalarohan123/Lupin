@@ -10,9 +10,11 @@ import BindClick from "./Components/BindClick";
 import ParentComponent from "./Components/ParentComponent";
 import IfnElse from "./Components/IfnElse";
 import ListRendering from "./Components/ListRendering";
+import PersonRendering from "./Components/PersonRendering";
 function App() {
   return (
     <div className="App">
+      <PersonRendering/>
       <ListRendering/>
       {/*<IfnElse/>
       
