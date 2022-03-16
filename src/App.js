@@ -14,10 +14,10 @@ import PersonRendering from "./Components/PersonRendering";
 function App() {
   return (
     <div className="App">
-      {/*
+      
       <PersonRendering/>
        <ListRendering/> 
-      <IfnElse/>
+      {/* <IfnElse/>
       
       <ParentComponent/>
        <CounterUsingUseState/> 
@@ -34,7 +34,7 @@ function App() {
        <Greet name="sss" age='1'></Greet>
       <FunctionCick  />
       <ClickClass/>
-      <BindClick />*/}
+      <BindClick />*/} 
     </div>
   );
 }

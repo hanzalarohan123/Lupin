@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-function PersonRendering(person) {
+function PersonRendering(p) {
   return (
-    <h3>My name is {person.name} my age is {person.age} and my city is {person.city}</h3>
+    <h3>My name is {p.name} my age is {p.age} and my city is {p.city}</h3>
   )
 }
 

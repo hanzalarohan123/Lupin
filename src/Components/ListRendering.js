@@ -9,20 +9,23 @@ function ListRendering() {
         {
             name: 'josh',
             age: 20,
-            city: 'khi'
+            city: 'khi',
+            id:1
         },
         {
             name: 'hosh',
             age: 23,
-            city: 'isb'
+            city: 'isb',
+            id:2
         }, {
             name: 'khosh',
             age: 12,
-            city: 'lhr'
+            city: 'lhr',
+            id:3
         }
     ]
     //const RenderingPersons =Persons.map(person=> <h3>My name is {person.name} my age is {person.age} and my city is {person.city}</h3>)
-    const personSecondFile = persons.map(person => <PersonRendering person={person} />)
+    const personSecondFile = persons.map(persons => <PersonRendering key={persons.id} persons={persons} />)
 
 
     return <div> {personSecondFile} </div>
