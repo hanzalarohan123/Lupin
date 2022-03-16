@@ -14,9 +14,10 @@ import PersonRendering from "./Components/PersonRendering";
 function App() {
   return (
     <div className="App">
+      {/*
       <PersonRendering/>
-      <ListRendering/>
-      {/*<IfnElse/>
+       <ListRendering/> 
+      <IfnElse/>
       
       <ParentComponent/>
        <CounterUsingUseState/> 
