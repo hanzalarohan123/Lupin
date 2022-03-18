@@ -12,12 +12,15 @@ import IfnElse from "./Components/IfnElse";
 import ListRendering from "./Components/ListRendering";
 import PersonRendering from "./Components/PersonRendering";
 import StyleSheet from "./Components/StyleSheet";
+import Inine from "./Components/Inine";
 function App() {
   return (
     <div className="App">
-      <StyleSheet primary={true}/>
+
+      <Inine/>
+      {/*<StyleSheet primary={true}/>
       
-      {/*<PersonRendering/>
+      <PersonRendering/>
        <ListRendering/> 
        <IfnElse/>
       
