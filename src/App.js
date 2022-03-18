@@ -11,13 +11,15 @@ import ParentComponent from "./Components/ParentComponent";
 import IfnElse from "./Components/IfnElse";
 import ListRendering from "./Components/ListRendering";
 import PersonRendering from "./Components/PersonRendering";
+import StyleSheet from "./Components/StyleSheet";
 function App() {
   return (
     <div className="App">
+      <StyleSheet primary={true}/>
       
-      <PersonRendering/>
+      {/*<PersonRendering/>
        <ListRendering/> 
-      {/* <IfnElse/>
+       <IfnElse/>
       
       <ParentComponent/>
        <CounterUsingUseState/> 
