@@ -42,10 +42,11 @@ class Form extends Component {
     fromHandler = event =>
     {
         alert( `${this.state.userName} ${this.state.commentUser} ${this.state.valueSelect} `)
+        event.preventDefault()
     }
     render() {
         return (
-            <form onSubmit={this.fromHandler}>
+            <form onSubmit={this.fromHandler} >
                 <div>Form</div>
                 <label>UserName</label>
                 <input value={this.state.userName} onChange={this.handleUserName}></input>
@@ -61,7 +62,7 @@ class Form extends Component {
                     </select>
                 </div>
                 <div>
-                    <button>Submit</button>
+                    <button type="submit">Submit</button>
                 </div>
             </form>
         );
