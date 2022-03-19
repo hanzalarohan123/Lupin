@@ -13,12 +13,24 @@ import ListRendering from "./Components/ListRendering";
 import PersonRendering from "./Components/PersonRendering";
 import StyleSheet from "./Components/StyleSheet";
 import Inine from "./Components/Inine";
+import Form from "./Components/Form";
 function App() {
   return (
     <div className="App">
 
-      <Inine/>
-      {/*<StyleSheet primary={true}/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <Form />
+      {/*<Inine/>
+      <StyleSheet primary={true}/>
       
       <PersonRendering/>
        <ListRendering/> 
