@@ -14,6 +14,7 @@ import PersonRendering from "./Components/PersonRendering";
 import StyleSheet from "./Components/StyleSheet";
 import Inine from "./Components/Inine";
 import Form from "./Components/Form";
+import LifeCycleA from "./Components/LifeCycleA";
 function App() {
   return (
     <div className="App">
@@ -27,9 +28,9 @@ function App() {
       
       
       
-      
+      {/*<LifeCycleA/>
       <Form />
-      {/*<Inine/>
+      <Inine/>
       <StyleSheet primary={true}/>
       
       <PersonRendering/>
