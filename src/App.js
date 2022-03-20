@@ -28,8 +28,8 @@ function App() {
       
       
       
-      {/*<LifeCycleA/>
-      <Form />
+      <LifeCycleA/>
+      {/*<Form />
       <Inine/>
       <StyleSheet primary={true}/>
       

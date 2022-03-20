@@ -1,34 +1,53 @@
 import React, { Component } from 'react'
+import LifeCycleB from './LifeCycleB'
 
 class LifeCycleA extends Component {
-  constructor(props) {
-    super(props)
-    this.setState=
-    {
-      name:'vishwas'
+	constructor(props) {
+		super(props)
+		this.state = {
+			name: 'Vishwas'
+		}
+		console.log('LifecycleA constructor')
+	}
 
-    }
-  console.log('constructor A')
-  }
-  componentDidMount()
-  {
-    console.log('componet deid mount')
+	static getDerivedStateFromProps(props, state) {
+		console.log('LifecycleA getDerivedStateFromProps')
+		return null
+	}
+
+	componentDidMount() {
+		console.log('LifecycleA componentDidMount')
+	}
+
+	shouldComponentUpdate() {
+		console.log('LifecycleA shouldComponentUpdate')
+		return true
+	}
+
+	getSnapshotBeforeUpdate(prevProps, prevState) {
+		console.log('LifecycleA getSnapshotBeforeUpdate')
     return null
-  }
-  static getDerivedStateFromProps(props,state)
-  {
-    console.log('getDeriveStateFromProps')
-    return null 
-  }
-  
-  render() {
-    console.log('rendeor')
-    return (
-      
-      <div>LifeCycleA </div>
-      
-    )
-  }
+	}
+
+	componentDidUpdate(prevProps, prevState, snapshot) {
+		console.log('LifecycleA componentDidUpdate')
+	}
+
+	changeState = () => {
+		this.setState({
+			name: 'Codevolution'
+		})
+	}
+
+	render() {
+		console.log('LifecycleA render')
+		return (
+			<div>
+				<button onClick={this.changeState}>Change state</button>
+				LifecycleA<LifeCycleB />
+			</div>
+		)
+	}
 }
 
 export default LifeCycleA
