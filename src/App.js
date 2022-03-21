@@ -17,8 +17,13 @@ import Form from "./Components/Form";
 import LifeCycleA from "./Components/LifeCycleA";
 
 import Fragmentsss from "./Components/Fragmentsss";
+import PureComp from "./Components/PureComp";
+import RegComp from "./Components/RegComp";
+import ParentComp from "./Components/ParentComp";
 function App() {
+  console.log('PARENT RENDER')
   return (
+    
     <div className="App">
 
       
@@ -28,9 +33,9 @@ function App() {
       
       
       
-      
-     <Fragmentsss/>
-      {/*<LifeCycleA/>
+     <ParentComp/>
+     {/*<Fragmentsss/>
+      <LifeCycleA/>
       <Form />
       <Inine/>
       <StyleSheet primary={true}/>
