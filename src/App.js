@@ -15,6 +15,8 @@ import StyleSheet from "./Components/StyleSheet";
 import Inine from "./Components/Inine";
 import Form from "./Components/Form";
 import LifeCycleA from "./Components/LifeCycleA";
+
+import Fragmentsss from "./Components/Fragmentsss";
 function App() {
   return (
     <div className="App">
@@ -27,9 +29,9 @@ function App() {
       
       
       
-      
-      <LifeCycleA/>
-      {/*<Form />
+     <Fragmentsss/>
+      {/*<LifeCycleA/>
+      <Form />
       <Inine/>
       <StyleSheet primary={true}/>
       
