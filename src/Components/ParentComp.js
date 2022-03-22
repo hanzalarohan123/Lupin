@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import Memo from './Memo'
 import PureComp from './PureComp'
 import RegComp from './RegComp'
 
@@ -9,7 +10,7 @@ class ParentComp extends PureComponent
     
       this.state = 
       {
-         name:'Hi'
+         name:'Hii'
       }
     }
     componentDidMount()
@@ -19,10 +20,10 @@ class ParentComp extends PureComponent
             this.setState
             (
                 {
-                    name:'Hii'
+                    name:'Hiii'
                 }
             )
-        },2
+        },3000
 
 
         )
@@ -30,8 +31,9 @@ class ParentComp extends PureComponent
   render() {
     return (
       <div>ParentComp 
-          <RegComp name={this.state.name} ></RegComp>
-          <PureComp name={this.state.name}></PureComp>
+          {/* <RegComp name={this.state.name} ></RegComp>
+          <PureComp name={this.state.name}></PureComp> */}
+          <Memo name={this.state.name} />
       </div>
     )
   }
