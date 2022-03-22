@@ -20,6 +20,7 @@ import Fragmentsss from "./Components/Fragmentsss";
 import PureComp from "./Components/PureComp";
 import RegComp from "./Components/RegComp";
 import ParentComp from "./Components/ParentComp";
+import Ref from "./Components/Ref";
 function App() {
   console.log('PARENT RENDER')
   return (
@@ -32,9 +33,9 @@ function App() {
       
       
       
-      
-     <ParentComp/>
-     {/*<Fragmentsss/>
+      <Ref/>
+     {/* <ParentComp/>
+     <Fragmentsss/> 
       <LifeCycleA/>
       <Form />
       <Inine/>
