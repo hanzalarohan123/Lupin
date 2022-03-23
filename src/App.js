@@ -23,6 +23,7 @@ import ParentComp from "./Components/ParentComp";
 import Ref from "./Components/Ref";
 import FocusInput from "./Components/FocusInput";
 import FRParentInput from "./Components/FRParentInput";
+import PortalDemo from "./Components/PortalDemo";
 function App() {
   console.log('PARENT RENDER')
   return (
@@ -32,10 +33,10 @@ function App() {
       
       
       
-      
-      
+      <PortalDemo/>     
+      {/* 
       <FRParentInput/>
-     {/* <FocusInput/>
+      <FocusInput/>
       <ParentComp/>
      <Fragmentsss/> 
       <LifeCycleA/>
