@@ -22,6 +22,7 @@ import RegComp from "./Components/RegComp";
 import ParentComp from "./Components/ParentComp";
 import Ref from "./Components/Ref";
 import FocusInput from "./Components/FocusInput";
+import FRParentInput from "./Components/FRParentInput";
 function App() {
   console.log('PARENT RENDER')
   return (
@@ -33,9 +34,9 @@ function App() {
       
       
       
-      
-      <FocusInput/>
-     {/* <ParentComp/>
+      <FRParentInput/>
+     {/* <FocusInput/>
+      <ParentComp/>
      <Fragmentsss/> 
       <LifeCycleA/>
       <Form />
