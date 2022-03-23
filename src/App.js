@@ -24,6 +24,8 @@ import Ref from "./Components/Ref";
 import FocusInput from "./Components/FocusInput";
 import FRParentInput from "./Components/FRParentInput";
 import PortalDemo from "./Components/PortalDemo";
+import ErrorBoundary from "./Components/ErrorBoundary";
+import ErrorCatch from "./Components/ErrorCatch";
 function App() {
   console.log('PARENT RENDER')
   return (
@@ -32,9 +34,16 @@ function App() {
 
       
       
-      
-      <PortalDemo/>     
+
+
+<ErrorCatch>
+      <ErrorBoundary heroname={'lpra'}/>
+      </ErrorCatch>
+      <ErrorCatch>
+      <ErrorBoundary heroname={'joker'}/>
+      </ErrorCatch>
       {/* 
+      <PortalDemo/>     
       <FRParentInput/>
       <FocusInput/>
       <ParentComp/>
@@ -43,11 +52,9 @@ function App() {
       <Form />
       <Inine/>
       <StyleSheet primary={true}/>
-      
       <PersonRendering/>
        <ListRendering/> 
        <IfnElse/>
-      
       <ParentComponent/>
        <CounterUsingUseState/> 
        <Greet name="sss" age='12'><p>child prop 1</p> </Greet>
