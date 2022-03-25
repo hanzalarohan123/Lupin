@@ -1,7 +1,7 @@
 import React from "react";
- const updatedComponent = ( OriginalComponent )=>
+ const updatedComponent = ( OriginalComponent,incrmentNumber )=>
  {
-     class NewComponent extends React.Component
+     class ReUsableCode extends React.Component
      {
 
 //start
@@ -15,16 +15,16 @@ import React from "react";
           }    
           clickCounter = () =>
           {
-              this.setState(prevState =>{return {counterx :prevState.counterx + 1}}) 
+              this.setState(prevState =>{return {counterx :prevState.counterx + incrmentNumber}}) 
           }
 //end
 
 
          render()
          {
-             return <OriginalComponent name='lodu' counterx={this.state.counterx} clickCounter={this.clickCounter}/>
+             return <OriginalComponent name='lodu' counterx={this.state.counterx} clickCounter={this.clickCounter} {...this.props}/>
          }
      }
-     return NewComponent
+     return ReUsableCode
  }
  export default updatedComponent

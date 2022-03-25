@@ -23,12 +23,12 @@ class Counter extends Component {
       //let counterx = this.state.counterx
       //let hoverx = this.state.hoverx
 
-      const {counterx,clickCounter,name}=this.props
+      const {counterx,clickCounter,name,sex}=this.props
     return (
         
         <div>
 
-<button onClick={clickCounter}> {name} Button is clicked {counterx} Times</button>
+<button onClick={clickCounter}> {name} Button is clicked {counterx} Times and sex is {sex}</button>
 {/* <h1 onMouseOver={this.clickHover}>{this.props.name} hovered {hoverx} Times</h1> */}
         </div>
      
@@ -36,4 +36,4 @@ class Counter extends Component {
   }
 }
 
-export default updatedComponent(Counter)
+export default updatedComponent(Counter ,5)
