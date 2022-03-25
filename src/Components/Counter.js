@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import updatedComponent from './ReUsableCode'
 
 class Counter extends Component {
     constructor(props) {
         super(props)
       
         this.state = {
-           counterx:0,
+           counterx:-1,
            hoverx:0
         }
       }    
@@ -24,12 +25,12 @@ class Counter extends Component {
     return (
         <div>
 
-<button onClick={this.clickCounter}>Button is clicked {counterx} Times</button>
-<h1 onMouseOver={this.clickHover}> hovered {hoverx} Times</h1>
+<button onClick={this.clickCounter}> {this.props.name} Button is clicked {counterx} Times</button>
+<h1 onMouseOver={this.clickHover}>{this.props.name} hovered {hoverx} Times</h1>
         </div>
      
     )
   }
 }
 
-export default Counter
+export default updatedComponent(Counter)
