@@ -26,29 +26,29 @@ import "./App.css";
 // import PortalDemo from "./Components/PortalDemo";
 // import ErrorBoundary from "./Components/ErrorBoundary";
 // import ErrorCatch from "./Components/ErrorCatch";
-import Counter from "./Components/Counter";
+//import Counter from "./Components/Counter";
+import CounterRender from "./Components/CounterRender";
 function App() {
-  console.log('PARENT RENDER')
+  //console.log('PARENT RENDER')
   return (
-    
+
     <div className="App">
 
-      
-      <Counter sex='male'/>
 
-{/*
-<ErrorCatch>
+    <CounterRender/>
+      {/*  
+      <Counter sex='male'/>
+      <ErrorCatch>
       <ErrorBoundary heroname={'lpra'}/>
       </ErrorCatch>
       <ErrorCatch>
       <ErrorBoundary heroname={'joker'}/>
       </ErrorCatch>
-       
       <PortalDemo/>     
       <FRParentInput/>
       <FocusInput/>
       <ParentComp/>
-     <Fragmentsss/> 
+      <Fragmentsss/> 
       <LifeCycleA/>
       <Form />
       <Inine/>
@@ -71,7 +71,7 @@ function App() {
        <Greet name="sss" age='1'></Greet>
       <FunctionCick  />
       <ClickClass/>
-      <BindClick />*/} 
+      <BindClick />*/}
     </div>
   );
 }
