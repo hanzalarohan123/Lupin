@@ -28,6 +28,9 @@ import "./App.css";
 // import ErrorCatch from "./Components/ErrorCatch";
 //import Counter from "./Components/Counter";
 import CounterRender from "./Components/CounterRender";
+import CounterRendorReusable from "./Components/CounterRendorReusable";
+import HoverRendor from "./Components/HoverRendor";
+import User from "./Components/User";
 function App() {
   //console.log('PARENT RENDER')
   return (
@@ -35,8 +38,11 @@ function App() {
     <div className="App">
 
 
-    <CounterRender/>
-      {/*  
+    <CounterRendorReusable/>
+      {/*
+      <CounterRender/>
+      <HoverRendor/>
+      <User name={(IsloggedIn)=> IsloggedIn ? 'WAH LODU' : 'Not A lodu'}/>
       <Counter sex='male'/>
       <ErrorCatch>
       <ErrorBoundary heroname={'lpra'}/>
