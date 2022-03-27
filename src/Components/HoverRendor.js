@@ -14,7 +14,7 @@ class HoverRendor extends Component {
     render() {
         
       return (
-        <h1 onMouseOver={this.IncremenentCount}>Hovered {this.state.count}</h1>
+        <h1 onMouseOver={this.props.IncremenentCount}>Hovered {this.props.count}</h1>
         
       )
     }

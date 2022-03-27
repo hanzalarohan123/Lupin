@@ -14,7 +14,7 @@ class CounterRender extends Component {
   render() {
       
     return (
-        <button onClick={this.IncremenentCount}>Clicked {this.state.count}</button>
+        <button onClick={this.props.IncremenentCount}>Clicked {this.props.count}</button>
     )
   }
 }

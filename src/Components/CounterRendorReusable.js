@@ -14,7 +14,10 @@ class CounterRendorReusable extends Component {
       }
   render() {
     return (
-      <div>CounterRendorReusable</div>
+      <div>
+          {/* yaha se counter ka rendr reusable code lagyga jo count or increment k method ko behjyga agy */}
+          {this.props.render(this.state.count,this.IncremenentCount)}
+      </div>
     )
   }
 }
