@@ -1,5 +1,6 @@
 //import logo from "./logo.svg";
 import "./App.css";
+import ComponentD from "./Components/ComponentD";
 // import Greet from "./Components/Greet";
 // import Welcome from "./Components/Welcome";
 // import IncludinState from "./Components/IncludinState";
@@ -31,13 +32,16 @@ import CounterRender from "./Components/CounterRender";
 import CounterRendorReusable from "./Components/CounterRendorReusable";
 import HoverRendor from "./Components/HoverRendor";
 import User from "./Components/User";
+import { UserProvider } from "./Components/UserContext";
 function App() {
   //console.log('PARENT RENDER')
   return (
 
     <div className="App">
 
-
+      <UserProvider value='Hanzal lah'>  
+      <ComponentD/>
+      </UserProvider>
       {/*
       <CounterRendorReusable render={(count,IncremenentCount)=><CounterRender count={count} IncremenentCount={IncremenentCount}></CounterRender>}/>
       <CounterRendorReusable render={(count,IncremenentCount)=><HoverRendor count={count} IncremenentCount={IncremenentCount}></HoverRendor>}/>
