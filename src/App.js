@@ -39,9 +39,11 @@ function App() {
 
     <div className="App">
 
-      <UserProvider value='Hanzal lah'>  
       <ComponentD/>
-      </UserProvider>
+      {/* This value will work if any paramenter is not passed in the UserContext Class. */}
+      {/* <UserProvider value='hanzallah'>  
+      <ComponentD/>
+      </UserProvider> */}
       {/*
       <CounterRendorReusable render={(count,IncremenentCount)=><CounterRender count={count} IncremenentCount={IncremenentCount}></CounterRender>}/>
       <CounterRendorReusable render={(count,IncremenentCount)=><HoverRendor count={count} IncremenentCount={IncremenentCount}></HoverRendor>}/>
