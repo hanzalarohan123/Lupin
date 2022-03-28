@@ -38,9 +38,9 @@ function App() {
     <div className="App">
 
 
-    <CounterRendorReusable render={(count,IncremenentCount)=><CounterRender count={count} IncremenentCount={IncremenentCount}></CounterRender>}/>
-    <CounterRendorReusable render={(count,IncremenentCount)=><HoverRendor count={count} IncremenentCount={IncremenentCount}></HoverRendor>}/>
       {/*
+      <CounterRendorReusable render={(count,IncremenentCount)=><CounterRender count={count} IncremenentCount={IncremenentCount}></CounterRender>}/>
+      <CounterRendorReusable render={(count,IncremenentCount)=><HoverRendor count={count} IncremenentCount={IncremenentCount}></HoverRendor>}/>
       <CounterRender/>  
       <HoverRendor/>
       <User name={(IsloggedIn)=> IsloggedIn ? 'WAH LODU' : 'Not A lodu'}/>
