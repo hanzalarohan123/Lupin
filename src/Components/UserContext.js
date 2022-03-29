@@ -5,3 +5,5 @@ const UserProvider=UserContext.Provider
 const UserConsumer=UserContext.Consumer
 
 export {UserConsumer,UserProvider}
+//export deafault when we are passing to other components
+export default UserContext
