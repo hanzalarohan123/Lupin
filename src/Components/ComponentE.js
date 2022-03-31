@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ComponentF from './ComponentF'
 import UserContext from './UserContext'
+//good project
 class ComponentE extends Component {
     //static contextType=UserContext -can be user tooo
   render() {
